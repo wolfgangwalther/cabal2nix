@@ -129,7 +129,9 @@ mkDerivation {
     transformers-base
     utf8-string
   ];
-  testToolDepends = [ hspec-discover ];
+  testToolDepends = [
+    hspec-discover
+  ];
   homepage = "https://github.com/neovimhaskell/nvim-hs";
   description = "Haskell plugin backend for neovim";
   license = lib.licenses.asl20;

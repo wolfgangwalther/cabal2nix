@@ -42,7 +42,9 @@ mkDerivation {
     unordered-containers
     vector
   ];
-  testToolDepends = [ hspec-discover ];
+  testToolDepends = [
+    hspec-discover
+  ];
   homepage = "https://github.com/abhinav/pinch#readme";
   description = "An alternative implementation of Thrift for Haskell";
   license = lib.licenses.bsd3;

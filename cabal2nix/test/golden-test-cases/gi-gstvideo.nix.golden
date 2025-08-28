@@ -43,7 +43,9 @@ mkDerivation {
     text
     transformers
   ];
-  libraryPkgconfigDepends = [ gst-plugins-base ];
+  libraryPkgconfigDepends = [
+    gst-plugins-base
+  ];
   homepage = "https://github.com/haskell-gi/haskell-gi";
   description = "GStreamerVideo bindings";
   license = lib.licenses.lgpl21Only;

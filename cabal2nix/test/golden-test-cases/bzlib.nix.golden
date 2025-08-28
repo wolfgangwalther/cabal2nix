@@ -13,7 +13,9 @@ mkDerivation {
     base
     bytestring
   ];
-  librarySystemDepends = [ bzip2 ];
+  librarySystemDepends = [
+    bzip2
+  ];
   description = "Compression and decompression in the bzip2 format";
   license = lib.licenses.bsd3;
 }

@@ -19,7 +19,9 @@ mkDerivation {
     containers
     regex-base
   ];
-  librarySystemDepends = [ pcre ];
+  librarySystemDepends = [
+    pcre
+  ];
   homepage = "http://hackage.haskell.org/package/regex-pcre";
   description = "Replaces/Enhances Text.Regex";
   license = lib.licenses.bsd3;

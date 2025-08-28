@@ -12,7 +12,9 @@ mkDerivation {
     base
     pretty
   ];
-  testHaskellDepends = [ base ];
+  testHaskellDepends = [
+    base
+  ];
   homepage = "https://github.com/sheyll/type-spec#readme";
   description = "Type Level Specification by Example";
   license = lib.licenses.bsd3;

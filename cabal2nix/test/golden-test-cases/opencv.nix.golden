@@ -59,7 +59,9 @@ mkDerivation {
     transformers
     vector
   ];
-  libraryPkgconfigDepends = [ opencv3 ];
+  libraryPkgconfigDepends = [
+    opencv3
+  ];
   testHaskellDepends = [
     base
     bytestring

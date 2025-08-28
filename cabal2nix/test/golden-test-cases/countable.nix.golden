@@ -12,7 +12,9 @@ mkDerivation {
   pname = "countable";
   version = "1.0";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [
+    base
+  ];
   testHaskellDepends = [
     base
     bytestring

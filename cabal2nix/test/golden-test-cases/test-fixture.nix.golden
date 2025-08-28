@@ -35,7 +35,9 @@ mkDerivation {
     template-haskell
     transformers
   ];
-  testToolDepends = [ hspec-discover ];
+  testToolDepends = [
+    hspec-discover
+  ];
   homepage = "http://github.com/cjdev/test-fixture#readme";
   description = "Test monadic side-effects";
   license = lib.licenses.bsd3;

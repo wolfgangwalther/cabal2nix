@@ -11,7 +11,9 @@ mkDerivation {
   pname = "diagrams-solve";
   version = "0.1.1";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [
+    base
+  ];
   testHaskellDepends = [
     base
     deepseq

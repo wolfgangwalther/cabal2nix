@@ -7,8 +7,12 @@ mkDerivation {
   pname = "code-page";
   version = "0.1.3";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ base ];
-  testHaskellDepends = [ base ];
+  libraryHaskellDepends = [
+    base
+  ];
+  testHaskellDepends = [
+    base
+  ];
   homepage = "https://github.com/RyanGlScott/code-page";
   description = "Windows code page library for Haskell";
   license = lib.licenses.bsd3;

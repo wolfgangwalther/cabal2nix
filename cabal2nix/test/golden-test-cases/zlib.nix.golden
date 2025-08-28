@@ -17,7 +17,9 @@ mkDerivation {
     base
     bytestring
   ];
-  librarySystemDepends = [ zlib ];
+  librarySystemDepends = [
+    zlib
+  ];
   testHaskellDepends = [
     base
     bytestring

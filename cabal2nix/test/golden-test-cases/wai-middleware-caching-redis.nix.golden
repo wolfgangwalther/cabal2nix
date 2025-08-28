@@ -24,7 +24,9 @@ mkDerivation {
     wai
     wai-middleware-caching
   ];
-  testHaskellDepends = [ base ];
+  testHaskellDepends = [
+    base
+  ];
   homepage = "http://github.com/yogsototh/wai-middleware-caching/tree/master/wai-middleware-caching-redis#readme";
   description = "Cache Wai Middleware using Redis backend";
   license = lib.licenses.bsd3;

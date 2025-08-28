@@ -17,7 +17,9 @@ mkDerivation {
     Cabal
     cabal-doctest
   ];
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [
+    base
+  ];
   testHaskellDepends = [
     base
     doctest

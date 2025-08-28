@@ -86,7 +86,9 @@ mkDerivation {
   pname = "pandoc";
   version = "2.18";
   sha256 = "deadbeef";
-  configureFlags = [ "-f-trypandoc" ];
+  configureFlags = [
+    "-f-trypandoc"
+  ];
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = true;
@@ -165,7 +167,9 @@ mkDerivation {
     zip-archive
     zlib
   ];
-  executableHaskellDepends = [ base ];
+  executableHaskellDepends = [
+    base
+  ];
   testHaskellDepends = [
     base
     bytestring

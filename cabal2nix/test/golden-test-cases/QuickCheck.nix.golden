@@ -22,7 +22,9 @@ mkDerivation {
     tf-random
     transformers
   ];
-  testHaskellDepends = [ base ];
+  testHaskellDepends = [
+    base
+  ];
   homepage = "https://github.com/nick8325/quickcheck";
   description = "Automatic testing of Haskell programs";
   license = lib.licenses.bsd3;

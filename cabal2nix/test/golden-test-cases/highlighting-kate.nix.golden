@@ -18,7 +18,9 @@ mkDerivation {
   pname = "highlighting-kate";
   version = "0.6.4";
   sha256 = "deadbeef";
-  configureFlags = [ "-fpcre-light" ];
+  configureFlags = [
+    "-fpcre-light"
+  ];
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [

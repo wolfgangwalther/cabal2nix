@@ -29,7 +29,9 @@ mkDerivation {
     transformers
     utility-ht
   ];
-  libraryPkgconfigDepends = [ sox ];
+  libraryPkgconfigDepends = [
+    sox
+  ];
   homepage = "http://www.haskell.org/haskellwiki/Sox";
   description = "Write, read, convert audio signals using libsox";
   license = lib.licenses.bsd3;

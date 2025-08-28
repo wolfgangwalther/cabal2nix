@@ -15,7 +15,9 @@ mkDerivation {
     bytestring
     transformers
   ];
-  libraryPkgconfigDepends = [ gsasl ];
+  libraryPkgconfigDepends = [
+    gsasl
+  ];
   homepage = "https://john-millikin.com/software/haskell-gsasl/";
   description = "Bindings for GNU libgsasl";
   license = lib.licenses.gpl3Only;

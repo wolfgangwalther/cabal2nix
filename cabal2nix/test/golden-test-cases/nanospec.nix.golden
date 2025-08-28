@@ -9,7 +9,9 @@ mkDerivation {
   pname = "nanospec";
   version = "0.2.1";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [
+    base
+  ];
   testHaskellDepends = [
     base
     hspec

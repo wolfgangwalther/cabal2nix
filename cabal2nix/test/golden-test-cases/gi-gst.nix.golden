@@ -37,7 +37,9 @@ mkDerivation {
     text
     transformers
   ];
-  libraryPkgconfigDepends = [ gstreamer ];
+  libraryPkgconfigDepends = [
+    gstreamer
+  ];
   homepage = "https://github.com/haskell-gi/haskell-gi";
   description = "GStreamer bindings";
   license = lib.licenses.lgpl21Only;

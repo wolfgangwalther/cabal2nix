@@ -7,7 +7,9 @@ mkDerivation {
   pname = "broadcast-chan";
   version = "0.1.1";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [
+    base
+  ];
   homepage = "https://github.com/merijn/broadcast-chan";
   description = "Broadcast channel type that avoids 0 reader space leaks";
   license = lib.licenses.bsd3;

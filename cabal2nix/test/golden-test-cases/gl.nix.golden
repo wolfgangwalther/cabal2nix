@@ -32,7 +32,9 @@ mkDerivation {
     half
     transformers
   ];
-  librarySystemDepends = [ libGL ];
+  librarySystemDepends = [
+    libGL
+  ];
   description = "Complete OpenGL raw bindings";
   license = lib.licenses.bsd3;
 }

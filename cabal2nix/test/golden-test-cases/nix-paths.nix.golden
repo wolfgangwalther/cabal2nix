@@ -13,7 +13,9 @@ mkDerivation {
     base
     process
   ];
-  libraryToolDepends = [ nix ];
+  libraryToolDepends = [
+    nix
+  ];
   homepage = "https://github.com/peti/nix-paths";
   description = "Knowledge of Nix's installation directories";
   license = lib.licenses.bsd3;

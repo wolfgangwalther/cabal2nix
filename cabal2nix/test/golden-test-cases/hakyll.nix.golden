@@ -144,7 +144,9 @@ mkDerivation {
     warp
     yaml
   ];
-  testToolDepends = [ util-linux ];
+  testToolDepends = [
+    util-linux
+  ];
   homepage = "http://jaspervdj.be/hakyll";
   description = "A static website compiler library";
   license = lib.licenses.bsd3;

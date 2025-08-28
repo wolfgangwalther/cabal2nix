@@ -7,7 +7,9 @@ mkDerivation {
   pname = "data-endian";
   version = "0.1.1";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [
+    base
+  ];
   homepage = "https://github.com/mvv/data-endian";
   description = "Endian-sensitive data";
   license = lib.licenses.bsd3;

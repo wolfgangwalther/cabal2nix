@@ -8,7 +8,9 @@ mkDerivation {
   pname = "utility-ht";
   version = "0.0.14";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [
+    base
+  ];
   testHaskellDepends = [
     base
     QuickCheck

@@ -13,7 +13,9 @@ mkDerivation {
     array
     base
   ];
-  librarySystemDepends = [ lmdb ];
+  librarySystemDepends = [
+    lmdb
+  ];
   homepage = "http://github.com/dmbarbour/haskell-lmdb";
   description = "Lightning MDB bindings";
   license = lib.licenses.bsd2;

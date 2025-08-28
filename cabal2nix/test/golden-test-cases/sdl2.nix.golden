@@ -28,8 +28,12 @@ mkDerivation {
     transformers
     vector
   ];
-  librarySystemDepends = [ SDL2 ];
-  libraryPkgconfigDepends = [ SDL2 ];
+  librarySystemDepends = [
+    SDL2
+  ];
+  libraryPkgconfigDepends = [
+    SDL2
+  ];
   description = "Both high- and low-level bindings to the SDL library (version 2.0.4+).";
   license = lib.licenses.bsd3;
 }
