@@ -1,9 +1,18 @@
-{ mkDerivation, array, base, lib, lmdb }:
+{
+  mkDerivation,
+  array,
+  base,
+  lib,
+  lmdb,
+}:
 mkDerivation {
   pname = "lmdb";
   version = "0.2.5";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ array base ];
+  libraryHaskellDepends = [
+    array
+    base
+  ];
   librarySystemDepends = [ lmdb ];
   homepage = "http://github.com/dmbarbour/haskell-lmdb";
   description = "Lightning MDB bindings";

@@ -1,8 +1,29 @@
-{ mkDerivation, aeson, ansi-wl-pprint, base, bifunctors, bytestring
-, comonad, directory, double-conversion, filepath, free, lens, lib
-, mtl, parsers, scientific, semigroups, tasty, tasty-golden, text
-, text-format, text-manipulate, trifecta, unordered-containers
-, vector
+{
+  mkDerivation,
+  aeson,
+  ansi-wl-pprint,
+  base,
+  bifunctors,
+  bytestring,
+  comonad,
+  directory,
+  double-conversion,
+  filepath,
+  free,
+  lens,
+  lib,
+  mtl,
+  parsers,
+  scientific,
+  semigroups,
+  tasty,
+  tasty-golden,
+  text,
+  text-format,
+  text-manipulate,
+  trifecta,
+  unordered-containers,
+  vector,
 }:
 mkDerivation {
   pname = "ede";
@@ -10,13 +31,37 @@ mkDerivation {
   sha256 = "deadbeef";
   enableSeparateDataOutput = true;
   libraryHaskellDepends = [
-    aeson ansi-wl-pprint base bifunctors bytestring comonad directory
-    double-conversion filepath free lens mtl parsers scientific
-    semigroups text text-format text-manipulate trifecta
-    unordered-containers vector
+    aeson
+    ansi-wl-pprint
+    base
+    bifunctors
+    bytestring
+    comonad
+    directory
+    double-conversion
+    filepath
+    free
+    lens
+    mtl
+    parsers
+    scientific
+    semigroups
+    text
+    text-format
+    text-manipulate
+    trifecta
+    unordered-containers
+    vector
   ];
   testHaskellDepends = [
-    aeson base bifunctors bytestring directory tasty tasty-golden text
+    aeson
+    base
+    bifunctors
+    bytestring
+    directory
+    tasty
+    tasty-golden
+    text
   ];
   homepage = "http://github.com/brendanhay/ede";
   description = "Templating language with similar syntax and features to Liquid or Jinja2";

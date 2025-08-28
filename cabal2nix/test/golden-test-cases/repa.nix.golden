@@ -1,12 +1,24 @@
-{ mkDerivation, base, bytestring, ghc-prim, lib, QuickCheck
-, template-haskell, vector
+{
+  mkDerivation,
+  base,
+  bytestring,
+  ghc-prim,
+  lib,
+  QuickCheck,
+  template-haskell,
+  vector,
 }:
 mkDerivation {
   pname = "repa";
   version = "3.4.1.3";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    base bytestring ghc-prim QuickCheck template-haskell vector
+    base
+    bytestring
+    ghc-prim
+    QuickCheck
+    template-haskell
+    vector
   ];
   homepage = "http://repa.ouroborus.net";
   description = "High performance, regular, shape polymorphic parallel arrays";

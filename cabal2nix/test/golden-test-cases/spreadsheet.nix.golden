@@ -1,5 +1,10 @@
-{ mkDerivation, base, explicit-exception, lib, transformers
-, utility-ht
+{
+  mkDerivation,
+  base,
+  explicit-exception,
+  lib,
+  transformers,
+  utility-ht,
 }:
 mkDerivation {
   pname = "spreadsheet";
@@ -8,7 +13,10 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base explicit-exception transformers utility-ht
+    base
+    explicit-exception
+    transformers
+    utility-ht
   ];
   homepage = "http://www.haskell.org/haskellwiki/Spreadsheet";
   description = "Read and write spreadsheets from and to CSV files in a lazy way";

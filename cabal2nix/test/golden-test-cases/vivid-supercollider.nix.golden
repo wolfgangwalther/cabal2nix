@@ -1,15 +1,37 @@
-{ mkDerivation, base, binary, bytestring, cereal, lib, microspec
-, QuickCheck, split, utf8-string, vivid-osc
+{
+  mkDerivation,
+  base,
+  binary,
+  bytestring,
+  cereal,
+  lib,
+  microspec,
+  QuickCheck,
+  split,
+  utf8-string,
+  vivid-osc,
 }:
 mkDerivation {
   pname = "vivid-supercollider";
   version = "0.3.0.0";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    base binary bytestring cereal split utf8-string vivid-osc
+    base
+    binary
+    bytestring
+    cereal
+    split
+    utf8-string
+    vivid-osc
   ];
   testHaskellDepends = [
-    base binary bytestring cereal microspec QuickCheck utf8-string
+    base
+    binary
+    bytestring
+    cereal
+    microspec
+    QuickCheck
+    utf8-string
     vivid-osc
   ];
   description = "Implementation of SuperCollider server specifications";

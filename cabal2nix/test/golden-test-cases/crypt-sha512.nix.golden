@@ -1,16 +1,32 @@
-{ mkDerivation, attoparsec, base, bytestring, cryptohash-sha512
-, lib, libxcrypt, quickcheck-instances, tasty, tasty-hunit
-, tasty-quickcheck
+{
+  mkDerivation,
+  attoparsec,
+  base,
+  bytestring,
+  cryptohash-sha512,
+  lib,
+  libxcrypt,
+  quickcheck-instances,
+  tasty,
+  tasty-hunit,
+  tasty-quickcheck,
 }:
 mkDerivation {
   pname = "crypt-sha512";
   version = "0";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    attoparsec base bytestring cryptohash-sha512
+    attoparsec
+    base
+    bytestring
+    cryptohash-sha512
   ];
   testHaskellDepends = [
-    base bytestring quickcheck-instances tasty tasty-hunit
+    base
+    bytestring
+    quickcheck-instances
+    tasty
+    tasty-hunit
     tasty-quickcheck
   ];
   testSystemDepends = [ libxcrypt ];

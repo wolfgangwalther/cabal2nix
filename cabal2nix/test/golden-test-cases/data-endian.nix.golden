@@ -1,4 +1,8 @@
-{ mkDerivation, base, lib }:
+{
+  mkDerivation,
+  base,
+  lib,
+}:
 mkDerivation {
   pname = "data-endian";
   version = "0.1.1";

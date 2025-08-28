@@ -1,5 +1,13 @@
-{ mkDerivation, array, base, binary, bytestring, lib, QuickCheck
-, test-framework, test-framework-quickcheck2
+{
+  mkDerivation,
+  array,
+  base,
+  binary,
+  bytestring,
+  lib,
+  QuickCheck,
+  test-framework,
+  test-framework-quickcheck2,
 }:
 mkDerivation {
   pname = "SHA";
@@ -7,9 +15,19 @@ mkDerivation {
   sha256 = "deadbeef";
   isLibrary = true;
   isExecutable = true;
-  libraryHaskellDepends = [ array base binary bytestring ];
+  libraryHaskellDepends = [
+    array
+    base
+    binary
+    bytestring
+  ];
   testHaskellDepends = [
-    array base binary bytestring QuickCheck test-framework
+    array
+    base
+    binary
+    bytestring
+    QuickCheck
+    test-framework
     test-framework-quickcheck2
   ];
   description = "Implementations of the SHA suite of message digest functions";

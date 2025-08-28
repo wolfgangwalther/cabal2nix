@@ -1,7 +1,27 @@
-{ mkDerivation, AC-Vector, base, bytestring, containers, deepseq
-, directory, ghc-prim, GLUT, hPDB, IfElse, iterable, lib, mtl
-, Octree, OpenGL, process, QuickCheck, template-haskell, text
-, text-format, time, vector
+{
+  mkDerivation,
+  AC-Vector,
+  base,
+  bytestring,
+  containers,
+  deepseq,
+  directory,
+  ghc-prim,
+  GLUT,
+  hPDB,
+  IfElse,
+  iterable,
+  lib,
+  mtl,
+  Octree,
+  OpenGL,
+  process,
+  QuickCheck,
+  template-haskell,
+  text,
+  text-format,
+  time,
+  vector,
 }:
 mkDerivation {
   pname = "hPDB-examples";
@@ -10,13 +30,42 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [
-    AC-Vector base bytestring containers deepseq directory ghc-prim
-    GLUT hPDB iterable mtl Octree OpenGL QuickCheck template-haskell
-    text text-format vector
+    AC-Vector
+    base
+    bytestring
+    containers
+    deepseq
+    directory
+    ghc-prim
+    GLUT
+    hPDB
+    iterable
+    mtl
+    Octree
+    OpenGL
+    QuickCheck
+    template-haskell
+    text
+    text-format
+    vector
   ];
   testHaskellDepends = [
-    AC-Vector base bytestring containers deepseq directory ghc-prim
-    hPDB IfElse iterable mtl process template-haskell text time vector
+    AC-Vector
+    base
+    bytestring
+    containers
+    deepseq
+    directory
+    ghc-prim
+    hPDB
+    IfElse
+    iterable
+    mtl
+    process
+    template-haskell
+    text
+    time
+    vector
   ];
   homepage = "https://github.com/BioHaskell/hPDB-examples";
   description = "Examples for hPDB library";

@@ -1,18 +1,48 @@
-{ mkDerivation, aeson, attoparsec, base, bytestring, Cabal
-, cabal-doctest, doctest, generic-deriving, lens, lib, scientific
-, semigroups, simple-reflect, text, unordered-containers, vector
+{
+  mkDerivation,
+  aeson,
+  attoparsec,
+  base,
+  bytestring,
+  Cabal,
+  cabal-doctest,
+  doctest,
+  generic-deriving,
+  lens,
+  lib,
+  scientific,
+  semigroups,
+  simple-reflect,
+  text,
+  unordered-containers,
+  vector,
 }:
 mkDerivation {
   pname = "lens-aeson";
   version = "1.0.2";
   sha256 = "deadbeef";
-  setupHaskellDepends = [ base Cabal cabal-doctest ];
+  setupHaskellDepends = [
+    base
+    Cabal
+    cabal-doctest
+  ];
   libraryHaskellDepends = [
-    aeson attoparsec base bytestring lens scientific text
-    unordered-containers vector
+    aeson
+    attoparsec
+    base
+    bytestring
+    lens
+    scientific
+    text
+    unordered-containers
+    vector
   ];
   testHaskellDepends = [
-    base doctest generic-deriving semigroups simple-reflect
+    base
+    doctest
+    generic-deriving
+    semigroups
+    simple-reflect
   ];
   homepage = "http://github.com/lens/lens-aeson/";
   description = "Law-abiding lenses for aeson";

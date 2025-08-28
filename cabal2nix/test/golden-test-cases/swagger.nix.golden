@@ -1,14 +1,34 @@
-{ mkDerivation, aeson, base, bytestring, lib, tasty, tasty-hunit
-, text, time, transformers
+{
+  mkDerivation,
+  aeson,
+  base,
+  bytestring,
+  lib,
+  tasty,
+  tasty-hunit,
+  text,
+  time,
+  transformers,
 }:
 mkDerivation {
   pname = "swagger";
   version = "0.3.0";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    aeson base bytestring text time transformers
+    aeson
+    base
+    bytestring
+    text
+    time
+    transformers
   ];
-  testHaskellDepends = [ aeson base bytestring tasty tasty-hunit ];
+  testHaskellDepends = [
+    aeson
+    base
+    bytestring
+    tasty
+    tasty-hunit
+  ];
   description = "Implementation of swagger data model";
   license = "unknown";
 }

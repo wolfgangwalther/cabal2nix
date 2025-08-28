@@ -1,12 +1,26 @@
-{ mkDerivation, base, foldl, lib, numhask, protolude, tdigest
-, vector, vector-algorithms
+{
+  mkDerivation,
+  base,
+  foldl,
+  lib,
+  numhask,
+  protolude,
+  tdigest,
+  vector,
+  vector-algorithms,
 }:
 mkDerivation {
   pname = "online";
   version = "0.2.0";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    base foldl numhask protolude tdigest vector vector-algorithms
+    base
+    foldl
+    numhask
+    protolude
+    tdigest
+    vector
+    vector-algorithms
   ];
   homepage = "https://github.com/tonyday567/online";
   description = "online statistics";

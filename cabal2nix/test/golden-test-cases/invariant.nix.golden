@@ -1,20 +1,55 @@
-{ mkDerivation, array, base, bifunctors, comonad, containers
-, contravariant, ghc-prim, hspec, lib, profunctors, QuickCheck
-, semigroups, StateVar, stm, tagged, template-haskell
-, th-abstraction, transformers, transformers-compat
-, unordered-containers
+{
+  mkDerivation,
+  array,
+  base,
+  bifunctors,
+  comonad,
+  containers,
+  contravariant,
+  ghc-prim,
+  hspec,
+  lib,
+  profunctors,
+  QuickCheck,
+  semigroups,
+  StateVar,
+  stm,
+  tagged,
+  template-haskell,
+  th-abstraction,
+  transformers,
+  transformers-compat,
+  unordered-containers,
 }:
 mkDerivation {
   pname = "invariant";
   version = "0.5";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    array base bifunctors comonad containers contravariant ghc-prim
-    profunctors semigroups StateVar stm tagged template-haskell
-    th-abstraction transformers transformers-compat
+    array
+    base
+    bifunctors
+    comonad
+    containers
+    contravariant
+    ghc-prim
+    profunctors
+    semigroups
+    StateVar
+    stm
+    tagged
+    template-haskell
+    th-abstraction
+    transformers
+    transformers-compat
     unordered-containers
   ];
-  testHaskellDepends = [ base hspec QuickCheck template-haskell ];
+  testHaskellDepends = [
+    base
+    hspec
+    QuickCheck
+    template-haskell
+  ];
   homepage = "https://github.com/nfrisby/invariant-functors";
   description = "Haskell98 invariant functors";
   license = lib.licenses.bsd2;

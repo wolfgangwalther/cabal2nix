@@ -1,6 +1,18 @@
-{ mkDerivation, attoparsec, base, blaze-html, blaze-markup
-, criterion, directory, hspec, hspec-attoparsec, lib, tagsoup, text
-, unordered-containers, vector
+{
+  mkDerivation,
+  attoparsec,
+  base,
+  blaze-html,
+  blaze-markup,
+  criterion,
+  directory,
+  hspec,
+  hspec-attoparsec,
+  lib,
+  tagsoup,
+  text,
+  unordered-containers,
+  vector,
 }:
 mkDerivation {
   pname = "taggy";
@@ -10,16 +22,38 @@ mkDerivation {
   isExecutable = true;
   enableSeparateDataOutput = true;
   libraryHaskellDepends = [
-    attoparsec base blaze-html blaze-markup text unordered-containers
+    attoparsec
+    base
+    blaze-html
+    blaze-markup
+    text
+    unordered-containers
     vector
   ];
-  executableHaskellDepends = [ attoparsec base text ];
+  executableHaskellDepends = [
+    attoparsec
+    base
+    text
+  ];
   testHaskellDepends = [
-    attoparsec base blaze-html blaze-markup directory hspec
-    hspec-attoparsec text unordered-containers vector
+    attoparsec
+    base
+    blaze-html
+    blaze-markup
+    directory
+    hspec
+    hspec-attoparsec
+    text
+    unordered-containers
+    vector
   ];
   benchmarkHaskellDepends = [
-    attoparsec base criterion tagsoup text vector
+    attoparsec
+    base
+    criterion
+    tagsoup
+    text
+    vector
   ];
   homepage = "http://github.com/alpmestan/taggy";
   description = "Efficient and simple HTML/XML parsing library";

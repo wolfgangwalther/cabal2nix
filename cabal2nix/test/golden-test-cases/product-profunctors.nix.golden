@@ -1,14 +1,27 @@
-{ mkDerivation, base, contravariant, lib, profunctors, tagged
-, template-haskell
+{
+  mkDerivation,
+  base,
+  contravariant,
+  lib,
+  profunctors,
+  tagged,
+  template-haskell,
 }:
 mkDerivation {
   pname = "product-profunctors";
   version = "0.8.0.3";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    base contravariant profunctors tagged template-haskell
+    base
+    contravariant
+    profunctors
+    tagged
+    template-haskell
   ];
-  testHaskellDepends = [ base profunctors ];
+  testHaskellDepends = [
+    base
+    profunctors
+  ];
   homepage = "https://github.com/tomjaguarpaw/product-profunctors";
   description = "product-profunctors";
   license = lib.licenses.bsd3;

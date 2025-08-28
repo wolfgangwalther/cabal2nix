@@ -1,15 +1,28 @@
-{ mkDerivation, base, lib, network-uri, postgresql-simple, split
-, tasty, tasty-quickcheck
+{
+  mkDerivation,
+  base,
+  lib,
+  network-uri,
+  postgresql-simple,
+  split,
+  tasty,
+  tasty-quickcheck,
 }:
 mkDerivation {
   pname = "postgresql-simple-url";
   version = "0.2.0.0";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    base network-uri postgresql-simple split
+    base
+    network-uri
+    postgresql-simple
+    split
   ];
   testHaskellDepends = [
-    base postgresql-simple tasty tasty-quickcheck
+    base
+    postgresql-simple
+    tasty
+    tasty-quickcheck
   ];
   homepage = "https://github.com/futurice/postgresql-simple-url";
   description = "Parse postgres:// url into ConnectInfo";

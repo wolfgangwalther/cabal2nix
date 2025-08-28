@@ -1,12 +1,27 @@
-{ mkDerivation, base, blaze-builder, bytestring, hedis, http-types
-, lib, text, wai, wai-middleware-caching
+{
+  mkDerivation,
+  base,
+  blaze-builder,
+  bytestring,
+  hedis,
+  http-types,
+  lib,
+  text,
+  wai,
+  wai-middleware-caching,
 }:
 mkDerivation {
   pname = "wai-middleware-caching-redis";
   version = "0.2.0.0";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    base blaze-builder bytestring hedis http-types text wai
+    base
+    blaze-builder
+    bytestring
+    hedis
+    http-types
+    text
+    wai
     wai-middleware-caching
   ];
   testHaskellDepends = [ base ];

@@ -1,7 +1,18 @@
-{ mkDerivation, base, filepath, ghc, ghc-paths, haskell-tools-ast
-, haskell-tools-backend-ghc, haskell-tools-builtin-refactorings
-, haskell-tools-prettyprint, haskell-tools-refactor, lib
-, references, split, template-haskell
+{
+  mkDerivation,
+  base,
+  filepath,
+  ghc,
+  ghc-paths,
+  haskell-tools-ast,
+  haskell-tools-backend-ghc,
+  haskell-tools-builtin-refactorings,
+  haskell-tools-prettyprint,
+  haskell-tools-refactor,
+  lib,
+  references,
+  split,
+  template-haskell,
 }:
 mkDerivation {
   pname = "haskell-tools-debug";
@@ -10,9 +21,17 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base filepath ghc ghc-paths haskell-tools-ast
-    haskell-tools-backend-ghc haskell-tools-builtin-refactorings
-    haskell-tools-prettyprint haskell-tools-refactor references split
+    base
+    filepath
+    ghc
+    ghc-paths
+    haskell-tools-ast
+    haskell-tools-backend-ghc
+    haskell-tools-builtin-refactorings
+    haskell-tools-prettyprint
+    haskell-tools-refactor
+    references
+    split
     template-haskell
   ];
   executableHaskellDepends = [ base ];

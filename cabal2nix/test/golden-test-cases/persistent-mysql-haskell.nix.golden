@@ -1,7 +1,24 @@
-{ mkDerivation, aeson, base, bytestring, conduit, containers
-, io-streams, lib, monad-control, monad-logger, mysql-haskell
-, network, persistent, persistent-template, resource-pool
-, resourcet, text, time, tls, transformers
+{
+  mkDerivation,
+  aeson,
+  base,
+  bytestring,
+  conduit,
+  containers,
+  io-streams,
+  lib,
+  monad-control,
+  monad-logger,
+  mysql-haskell,
+  network,
+  persistent,
+  persistent-template,
+  resource-pool,
+  resourcet,
+  text,
+  time,
+  tls,
+  transformers,
 }:
 mkDerivation {
   pname = "persistent-mysql-haskell";
@@ -10,12 +27,30 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    aeson base bytestring conduit containers io-streams monad-control
-    monad-logger mysql-haskell network persistent resource-pool
-    resourcet text time tls transformers
+    aeson
+    base
+    bytestring
+    conduit
+    containers
+    io-streams
+    monad-control
+    monad-logger
+    mysql-haskell
+    network
+    persistent
+    resource-pool
+    resourcet
+    text
+    time
+    tls
+    transformers
   ];
   executableHaskellDepends = [
-    base monad-logger persistent persistent-template transformers
+    base
+    monad-logger
+    persistent
+    persistent-template
+    transformers
   ];
   homepage = "http://www.yesodweb.com/book/persistent";
   description = "A pure haskell backend for the persistent library using MySQL database server";

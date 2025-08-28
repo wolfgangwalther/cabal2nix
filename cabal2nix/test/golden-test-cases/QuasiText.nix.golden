@@ -1,12 +1,23 @@
-{ mkDerivation, attoparsec, base, haskell-src-meta, lib
-, template-haskell, text, th-lift-instances
+{
+  mkDerivation,
+  attoparsec,
+  base,
+  haskell-src-meta,
+  lib,
+  template-haskell,
+  text,
+  th-lift-instances,
 }:
 mkDerivation {
   pname = "QuasiText";
   version = "0.1.2.6";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    attoparsec base haskell-src-meta template-haskell text
+    attoparsec
+    base
+    haskell-src-meta
+    template-haskell
+    text
     th-lift-instances
   ];
   homepage = "https://github.com/mikeplus64/QuasiText";

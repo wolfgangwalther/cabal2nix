@@ -1,12 +1,29 @@
-{ mkDerivation, base, bytestring, exceptions, hashable, lib, mtl
-, psqueues, text, time, unordered-containers
+{
+  mkDerivation,
+  base,
+  bytestring,
+  exceptions,
+  hashable,
+  lib,
+  mtl,
+  psqueues,
+  text,
+  time,
+  unordered-containers,
 }:
 mkDerivation {
   pname = "selda";
   version = "0.1.11.2";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    base bytestring exceptions hashable mtl psqueues text time
+    base
+    bytestring
+    exceptions
+    hashable
+    mtl
+    psqueues
+    text
+    time
     unordered-containers
   ];
   homepage = "https://selda.link";

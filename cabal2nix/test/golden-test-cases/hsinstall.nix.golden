@@ -1,4 +1,10 @@
-{ mkDerivation, base, directory, filepath, lib }:
+{
+  mkDerivation,
+  base,
+  directory,
+  filepath,
+  lib,
+}:
 mkDerivation {
   pname = "hsinstall";
   version = "1.6";
@@ -6,8 +12,16 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = true;
-  libraryHaskellDepends = [ base directory filepath ];
-  executableHaskellDepends = [ base directory filepath ];
+  libraryHaskellDepends = [
+    base
+    directory
+    filepath
+  ];
+  executableHaskellDepends = [
+    base
+    directory
+    filepath
+  ];
   description = "Install Haskell software";
   license = lib.licenses.isc;
   mainProgram = "an-app";

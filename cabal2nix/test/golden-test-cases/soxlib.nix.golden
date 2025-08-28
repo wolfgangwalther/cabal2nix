@@ -1,6 +1,16 @@
-{ mkDerivation, base, bytestring, containers, explicit-exception
-, extensible-exceptions, lib, sample-frame, sox, storablevector
-, transformers, utility-ht
+{
+  mkDerivation,
+  base,
+  bytestring,
+  containers,
+  explicit-exception,
+  extensible-exceptions,
+  lib,
+  sample-frame,
+  sox,
+  storablevector,
+  transformers,
+  utility-ht,
 }:
 mkDerivation {
   pname = "soxlib";
@@ -9,8 +19,15 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base bytestring containers explicit-exception extensible-exceptions
-    sample-frame storablevector transformers utility-ht
+    base
+    bytestring
+    containers
+    explicit-exception
+    extensible-exceptions
+    sample-frame
+    storablevector
+    transformers
+    utility-ht
   ];
   libraryPkgconfigDepends = [ sox ];
   homepage = "http://www.haskell.org/haskellwiki/Sox";

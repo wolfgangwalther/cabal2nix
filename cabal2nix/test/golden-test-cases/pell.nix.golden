@@ -1,13 +1,30 @@
-{ mkDerivation, arithmoi, base, Cabal, cabal-test-quickcheck
-, containers, lib, primes, QuickCheck
+{
+  mkDerivation,
+  arithmoi,
+  base,
+  Cabal,
+  cabal-test-quickcheck,
+  containers,
+  lib,
+  primes,
+  QuickCheck,
 }:
 mkDerivation {
   pname = "pell";
   version = "0.1.1.0";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ arithmoi base containers ];
+  libraryHaskellDepends = [
+    arithmoi
+    base
+    containers
+  ];
   testHaskellDepends = [
-    arithmoi base Cabal cabal-test-quickcheck containers primes
+    arithmoi
+    base
+    Cabal
+    cabal-test-quickcheck
+    containers
+    primes
     QuickCheck
   ];
   homepage = "https://github.com/brunjlar/pell";

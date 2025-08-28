@@ -1,20 +1,60 @@
-{ mkDerivation, array, base, containers, criterion, deepseq
-, fingertree-psqueue, ghc-prim, hashable, HUnit, lib, mtl, PSQueue
-, QuickCheck, random, tagged, test-framework, test-framework-hunit
-, test-framework-quickcheck2, unordered-containers
+{
+  mkDerivation,
+  array,
+  base,
+  containers,
+  criterion,
+  deepseq,
+  fingertree-psqueue,
+  ghc-prim,
+  hashable,
+  HUnit,
+  lib,
+  mtl,
+  PSQueue,
+  QuickCheck,
+  random,
+  tagged,
+  test-framework,
+  test-framework-hunit,
+  test-framework-quickcheck2,
+  unordered-containers,
 }:
 mkDerivation {
   pname = "psqueues";
   version = "0.2.4.0";
   sha256 = "deadbeef";
-  libraryHaskellDepends = [ base deepseq ghc-prim hashable ];
+  libraryHaskellDepends = [
+    base
+    deepseq
+    ghc-prim
+    hashable
+  ];
   testHaskellDepends = [
-    array base deepseq ghc-prim hashable HUnit QuickCheck tagged
-    test-framework test-framework-hunit test-framework-quickcheck2
+    array
+    base
+    deepseq
+    ghc-prim
+    hashable
+    HUnit
+    QuickCheck
+    tagged
+    test-framework
+    test-framework-hunit
+    test-framework-quickcheck2
   ];
   benchmarkHaskellDepends = [
-    base containers criterion deepseq fingertree-psqueue ghc-prim
-    hashable mtl PSQueue random unordered-containers
+    base
+    containers
+    criterion
+    deepseq
+    fingertree-psqueue
+    ghc-prim
+    hashable
+    mtl
+    PSQueue
+    random
+    unordered-containers
   ];
   description = "Pure priority search queues";
   license = lib.licenses.bsd3;

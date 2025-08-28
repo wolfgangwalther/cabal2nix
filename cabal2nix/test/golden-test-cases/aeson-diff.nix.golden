@@ -1,7 +1,24 @@
-{ mkDerivation, aeson, base, bytestring, directory, doctest
-, edit-distance-vector, filepath, Glob, hashable, hlint, lib, mtl
-, optparse-applicative, QuickCheck, quickcheck-instances
-, scientific, text, unordered-containers, vector
+{
+  mkDerivation,
+  aeson,
+  base,
+  bytestring,
+  directory,
+  doctest,
+  edit-distance-vector,
+  filepath,
+  Glob,
+  hashable,
+  hlint,
+  lib,
+  mtl,
+  optparse-applicative,
+  QuickCheck,
+  quickcheck-instances,
+  scientific,
+  text,
+  unordered-containers,
+  vector,
 }:
 mkDerivation {
   pname = "aeson-diff";
@@ -10,15 +27,38 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    aeson base bytestring edit-distance-vector hashable mtl scientific
-    text unordered-containers vector
+    aeson
+    base
+    bytestring
+    edit-distance-vector
+    hashable
+    mtl
+    scientific
+    text
+    unordered-containers
+    vector
   ];
   executableHaskellDepends = [
-    aeson base bytestring optparse-applicative text
+    aeson
+    base
+    bytestring
+    optparse-applicative
+    text
   ];
   testHaskellDepends = [
-    aeson base bytestring directory doctest filepath Glob hlint
-    QuickCheck quickcheck-instances text unordered-containers vector
+    aeson
+    base
+    bytestring
+    directory
+    doctest
+    filepath
+    Glob
+    hlint
+    QuickCheck
+    quickcheck-instances
+    text
+    unordered-containers
+    vector
   ];
   homepage = "https://github.com/thsutton/aeson-diff";
   description = "Extract and apply patches to JSON documents";

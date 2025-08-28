@@ -1,7 +1,26 @@
-{ mkDerivation, attoparsec, base, base-unicode-symbols, bytestring
-, case-insensitive, directory, filepath, http-types, lib, mtl
-, network, process, tasty, tasty-hunit, text, transformers, wai
-, wai-extra, wai-websockets, warp, websockets
+{
+  mkDerivation,
+  attoparsec,
+  base,
+  base-unicode-symbols,
+  bytestring,
+  case-insensitive,
+  directory,
+  filepath,
+  http-types,
+  lib,
+  mtl,
+  network,
+  process,
+  tasty,
+  tasty-hunit,
+  text,
+  transformers,
+  wai,
+  wai-extra,
+  wai-websockets,
+  warp,
+  websockets,
 }:
 mkDerivation {
   pname = "wai-cors";
@@ -9,12 +28,31 @@ mkDerivation {
   sha256 = "deadbeef";
   enableSeparateDataOutput = true;
   libraryHaskellDepends = [
-    attoparsec base base-unicode-symbols bytestring case-insensitive
-    http-types mtl transformers wai
+    attoparsec
+    base
+    base-unicode-symbols
+    bytestring
+    case-insensitive
+    http-types
+    mtl
+    transformers
+    wai
   ];
   testHaskellDepends = [
-    base base-unicode-symbols directory filepath http-types network
-    process tasty tasty-hunit text wai wai-extra wai-websockets warp
+    base
+    base-unicode-symbols
+    directory
+    filepath
+    http-types
+    network
+    process
+    tasty
+    tasty-hunit
+    text
+    wai
+    wai-extra
+    wai-websockets
+    warp
     websockets
   ];
   homepage = "https://github.com/larskuhtz/wai-cors";

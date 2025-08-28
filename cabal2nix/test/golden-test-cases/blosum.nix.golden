@@ -1,5 +1,16 @@
-{ mkDerivation, base, containers, fasta, lens, lib
-, optparse-applicative, pipes, pipes-text, split, text, text-show
+{
+  mkDerivation,
+  base,
+  containers,
+  fasta,
+  lens,
+  lib,
+  optparse-applicative,
+  pipes,
+  pipes-text,
+  split,
+  text,
+  text-show,
 }:
 mkDerivation {
   pname = "blosum";
@@ -8,10 +19,21 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base containers fasta lens text text-show
+    base
+    containers
+    fasta
+    lens
+    text
+    text-show
   ];
   executableHaskellDepends = [
-    base containers fasta optparse-applicative pipes pipes-text split
+    base
+    containers
+    fasta
+    optparse-applicative
+    pipes
+    pipes-text
+    split
     text
   ];
   homepage = "http://github.com/GregorySchwartz/blosum#readme";

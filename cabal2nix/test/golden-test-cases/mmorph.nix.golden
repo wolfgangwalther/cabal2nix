@@ -1,11 +1,20 @@
-{ mkDerivation, base, lib, mtl, transformers, transformers-compat
+{
+  mkDerivation,
+  base,
+  lib,
+  mtl,
+  transformers,
+  transformers-compat,
 }:
 mkDerivation {
   pname = "mmorph";
   version = "1.1.0";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    base mtl transformers transformers-compat
+    base
+    mtl
+    transformers
+    transformers-compat
   ];
   description = "Monad morphisms";
   license = lib.licenses.bsd3;

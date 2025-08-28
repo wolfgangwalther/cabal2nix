@@ -1,12 +1,24 @@
-{ mkDerivation, aeson, base, bytestring, http-client
-, http-client-tls, lib, mtl
+{
+  mkDerivation,
+  aeson,
+  base,
+  bytestring,
+  http-client,
+  http-client-tls,
+  lib,
+  mtl,
 }:
 mkDerivation {
   pname = "kraken";
   version = "0.1.0";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    aeson base bytestring http-client http-client-tls mtl
+    aeson
+    base
+    bytestring
+    http-client
+    http-client-tls
+    mtl
   ];
   description = "Kraken.io API client";
   license = lib.licenses.mit;

@@ -1,5 +1,18 @@
-{ mkDerivation, base, containers, directory, filepath, HUnit, hxt
-, json, lib, mtl, parsec, regex-tdfa, tasty, tasty-hunit
+{
+  mkDerivation,
+  base,
+  containers,
+  directory,
+  filepath,
+  HUnit,
+  hxt,
+  json,
+  lib,
+  mtl,
+  parsec,
+  regex-tdfa,
+  tasty,
+  tasty-hunit,
 }:
 mkDerivation {
   pname = "katydid";
@@ -8,11 +21,29 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base containers hxt json mtl parsec regex-tdfa
+    base
+    containers
+    hxt
+    json
+    mtl
+    parsec
+    regex-tdfa
   ];
-  executableHaskellDepends = [ base mtl ];
+  executableHaskellDepends = [
+    base
+    mtl
+  ];
   testHaskellDepends = [
-    base containers directory filepath HUnit hxt json mtl parsec tasty
+    base
+    containers
+    directory
+    filepath
+    HUnit
+    hxt
+    json
+    mtl
+    parsec
+    tasty
     tasty-hunit
   ];
   homepage = "https://github.com/katydid/katydid-haskell";

@@ -1,5 +1,15 @@
-{ mkDerivation, base, containers, directory, extra, filepath
-, ghc-prof, hashable, lib, scientific, text
+{
+  mkDerivation,
+  base,
+  containers,
+  directory,
+  extra,
+  filepath,
+  ghc-prof,
+  hashable,
+  lib,
+  scientific,
+  text,
 }:
 mkDerivation {
   pname = "profiterole";
@@ -8,8 +18,15 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [
-    base containers directory extra filepath ghc-prof hashable
-    scientific text
+    base
+    containers
+    directory
+    extra
+    filepath
+    ghc-prof
+    hashable
+    scientific
+    text
   ];
   homepage = "https://github.com/ndmitchell/profiterole#readme";
   description = "Restructure GHC profile reports";

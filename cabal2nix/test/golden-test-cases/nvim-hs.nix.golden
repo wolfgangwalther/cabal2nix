@@ -1,12 +1,46 @@
-{ mkDerivation, ansi-wl-pprint, base, bytestring, cereal
-, cereal-conduit, conduit, conduit-extra, containers, data-default
-, deepseq, directory, dyre, exceptions, filepath, foreign-store
-, hslogger, hspec, hspec-discover, HUnit, lib, lifted-base
-, megaparsec, messagepack, monad-control, mtl, network
-, optparse-applicative, process, QuickCheck, resourcet, setenv, stm
-, streaming-commons, template-haskell, text, time
-, time-locale-compat, transformers, transformers-base, utf8-string
-, void
+{
+  mkDerivation,
+  ansi-wl-pprint,
+  base,
+  bytestring,
+  cereal,
+  cereal-conduit,
+  conduit,
+  conduit-extra,
+  containers,
+  data-default,
+  deepseq,
+  directory,
+  dyre,
+  exceptions,
+  filepath,
+  foreign-store,
+  hslogger,
+  hspec,
+  hspec-discover,
+  HUnit,
+  lib,
+  lifted-base,
+  megaparsec,
+  messagepack,
+  monad-control,
+  mtl,
+  network,
+  optparse-applicative,
+  process,
+  QuickCheck,
+  resourcet,
+  setenv,
+  stm,
+  streaming-commons,
+  template-haskell,
+  text,
+  time,
+  time-locale-compat,
+  transformers,
+  transformers-base,
+  utf8-string,
+  void,
 }:
 mkDerivation {
   pname = "nvim-hs";
@@ -15,22 +49,85 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    ansi-wl-pprint base bytestring cereal cereal-conduit conduit
-    conduit-extra containers data-default deepseq directory dyre
-    exceptions filepath foreign-store hslogger lifted-base megaparsec
-    messagepack monad-control mtl network optparse-applicative process
-    resourcet setenv stm streaming-commons template-haskell text time
-    time-locale-compat transformers transformers-base utf8-string void
+    ansi-wl-pprint
+    base
+    bytestring
+    cereal
+    cereal-conduit
+    conduit
+    conduit-extra
+    containers
+    data-default
+    deepseq
+    directory
+    dyre
+    exceptions
+    filepath
+    foreign-store
+    hslogger
+    lifted-base
+    megaparsec
+    messagepack
+    monad-control
+    mtl
+    network
+    optparse-applicative
+    process
+    resourcet
+    setenv
+    stm
+    streaming-commons
+    template-haskell
+    text
+    time
+    time-locale-compat
+    transformers
+    transformers-base
+    utf8-string
+    void
   ];
-  executableHaskellDepends = [ base data-default ];
+  executableHaskellDepends = [
+    base
+    data-default
+  ];
   testHaskellDepends = [
-    ansi-wl-pprint base bytestring cereal cereal-conduit conduit
-    conduit-extra containers data-default directory dyre exceptions
-    filepath foreign-store hslogger hspec hspec-discover HUnit
-    lifted-base megaparsec messagepack mtl network optparse-applicative
-    process QuickCheck resourcet setenv stm streaming-commons
-    template-haskell text time time-locale-compat transformers
-    transformers-base utf8-string
+    ansi-wl-pprint
+    base
+    bytestring
+    cereal
+    cereal-conduit
+    conduit
+    conduit-extra
+    containers
+    data-default
+    directory
+    dyre
+    exceptions
+    filepath
+    foreign-store
+    hslogger
+    hspec
+    hspec-discover
+    HUnit
+    lifted-base
+    megaparsec
+    messagepack
+    mtl
+    network
+    optparse-applicative
+    process
+    QuickCheck
+    resourcet
+    setenv
+    stm
+    streaming-commons
+    template-haskell
+    text
+    time
+    time-locale-compat
+    transformers
+    transformers-base
+    utf8-string
   ];
   testToolDepends = [ hspec-discover ];
   homepage = "https://github.com/neovimhaskell/nvim-hs";

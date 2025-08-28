@@ -1,5 +1,12 @@
-{ mkDerivation, base, HUnit, lib, optional-args, parsec, text
-, turtle
+{
+  mkDerivation,
+  base,
+  HUnit,
+  lib,
+  optional-args,
+  parsec,
+  text,
+  turtle,
 }:
 mkDerivation {
   pname = "turtle-options";
@@ -7,9 +14,22 @@ mkDerivation {
   sha256 = "deadbeef";
   isLibrary = true;
   isExecutable = true;
-  libraryHaskellDepends = [ base optional-args parsec text turtle ];
-  executableHaskellDepends = [ base turtle ];
-  testHaskellDepends = [ base HUnit parsec ];
+  libraryHaskellDepends = [
+    base
+    optional-args
+    parsec
+    text
+    turtle
+  ];
+  executableHaskellDepends = [
+    base
+    turtle
+  ];
+  testHaskellDepends = [
+    base
+    HUnit
+    parsec
+  ];
   homepage = "https://github.com/elaye/turtle-options#readme";
   description = "Collection of command line options and parsers for these options";
   license = lib.licenses.bsd3;

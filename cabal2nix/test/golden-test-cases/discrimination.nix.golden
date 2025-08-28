@@ -1,19 +1,52 @@
-{ mkDerivation, array, base, containers, contravariant, criterion
-, deepseq, ghc-prim, hashable, lib, primitive, profunctors
-, promises, semigroups, transformers, transformers-compat
-, unordered-containers, vector, void
+{
+  mkDerivation,
+  array,
+  base,
+  containers,
+  contravariant,
+  criterion,
+  deepseq,
+  ghc-prim,
+  hashable,
+  lib,
+  primitive,
+  profunctors,
+  promises,
+  semigroups,
+  transformers,
+  transformers-compat,
+  unordered-containers,
+  vector,
+  void,
 }:
 mkDerivation {
   pname = "discrimination";
   version = "0.3";
   sha256 = "deadbeef";
   libraryHaskellDepends = [
-    array base containers contravariant deepseq ghc-prim hashable
-    primitive profunctors promises semigroups transformers
-    transformers-compat vector void
+    array
+    base
+    containers
+    contravariant
+    deepseq
+    ghc-prim
+    hashable
+    primitive
+    profunctors
+    promises
+    semigroups
+    transformers
+    transformers-compat
+    vector
+    void
   ];
   benchmarkHaskellDepends = [
-    base containers criterion deepseq ghc-prim primitive
+    base
+    containers
+    criterion
+    deepseq
+    ghc-prim
+    primitive
     unordered-containers
   ];
   homepage = "http://github.com/ekmett/discrimination/";
