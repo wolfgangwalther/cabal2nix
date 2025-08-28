@@ -39,10 +39,9 @@ boolattr n p v = if p then attr n (bool v) else empty
 
 listattrDoc :: String -> Doc -> [Doc] -> Doc
 listattrDoc n prefix vs = onlyIf (not (null vs)) $
-  sep [ text n <+> equals <+> prefix <+> lbrack,
-        nest 2 $ fsep vs,
-        rbrack <> semi
-      ]
+  (text n <+> equals <+> prefix <+> lbrack) $+$
+  (nest 2 $ vcat vs) $+$
+  (rbrack <> semi)
 
 listattr :: String -> Doc -> [String] -> Doc
 listattr n p = listattrDoc n p . map text
