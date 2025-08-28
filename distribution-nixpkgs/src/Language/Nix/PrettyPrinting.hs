@@ -72,12 +72,8 @@ quoteString ('\\':x:xs)
   | otherwise           = text "\\\\" <> quoteString (x:xs)
 quoteString (x:xs)      = char x <> quoteString xs
 
-prepunctuate :: Doc -> [Doc] -> [Doc]
-prepunctuate _ []     = []
-prepunctuate p (d:ds) = d : map (p <>) ds
-
 funargs :: [Doc] -> Doc
 funargs xs =
   lbrace $+$
-  vcat (prepunctuate (comma <> text " ") $ map (nest 2) xs) $+$
+  vcat (map ((<> comma) . nest 2) xs) $+$
   rbrace <> colon
