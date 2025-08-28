@@ -77,7 +77,7 @@ prepunctuate _ []     = []
 prepunctuate p (d:ds) = d : map (p <>) ds
 
 funargs :: [Doc] -> Doc
-funargs xs = sep [
-               lbrace <+> fcat (prepunctuate (comma <> text " ") $ map (nest 2) xs),
-               rbrace <> colon
-             ]
+funargs xs =
+  lbrace $+$
+  vcat (prepunctuate (comma <> text " ") $ map (nest 2) xs) $+$
+  rbrace <> colon
